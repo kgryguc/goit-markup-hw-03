@@ -20,8 +20,8 @@
     />
   </head>
   <body>
-    <header>
-      <div class="container flex header">
+    <header class="header-padding-border">
+      <div class="container flex-header">
         <div class="header-logo-nav">
           <a class="logo" href="index.html"
             ><span class="logo-accent">Web</span>Studio</a
@@ -49,7 +49,7 @@
             >info@devstudio.com</a
           >
           <a
-            class="header-contact header-tel last hover-focus-blue"
+            class="header-contact header-tel hover-focus-blue"
             href="tel:+48111111111"
             >+48 111 111 111</a
           >
@@ -61,7 +61,7 @@
       <!-- HERO -->
 
       <section class="section hero">
-        <div class="container flex">
+        <div class="container flex-hero">
           <h1 class="hero-header">Efektywne rozwiązania dla waszego biznesu</h1>
           <button class="hero-button button" type="button">Zamów usługę</button>
         </div>
@@ -69,61 +69,73 @@
 
       <!-- OUR ADVANTAGES -->
 
-      <div>
-        <dl>
-          <dt class="advantages-term">Lorem ipsum</dt>
-          <dd class="advantages-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-            arcu sem. Sed non sodales dui. Interdum et malesuada
-          </dd>
-          <dt class="advantages-term">Lorem ipsum</dt>
-          <dd class="advantages-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-            arcu sem. Sed non sodales dui. Interdum et malesuada
-          </dd>
-          <dt class="advantages-term">Lorem ipsum</dt>
-          <dd class="advantages-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-            arcu sem. Sed non sodales dui. Interdum et malesuada
-          </dd>
-          <dt class="advantages-term">Lorem ipsum</dt>
-          <dd class="advantages-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-            arcu sem. Sed non sodales dui. Interdum et malesuada
-          </dd>
+      <div class="container flex advantages">
+        <dl class="advantages-list">
+          <div class="advantages-item">
+            <dt class="advantages-term">Lorem ipsum</dt>
+            <dd class="advantages-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </dd>
+          </div>
+          <div class="advantages-item">
+            <dt class="advantages-term">Lorem ipsum</dt>
+            <dd class="advantages-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </dd>
+          </div>
+          <div class="advantages-item">
+            <dt class="advantages-term">Lorem ipsum</dt>
+            <dd class="advantages-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </dd>
+          </div>
+          <div class="advantages-item">
+            <dt class="advantages-term">Lorem ipsum</dt>
+            <dd class="advantages-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
+            </dd>
+          </div>
         </dl>
       </div>
 
       <!-- WHAT WE DO -->
 
-      <section>
-        <h2 class="section-title">Czym się zajmujemy</h2>
-        <ul>
-          <li class="showcase-item">
-            <img
-              src="images/what-we-do-1.jpg"
-              alt="Typing on white keyboard"
-              width="370"
-              height="274"
-            />
-          </li>
-          <li class="showcase-item">
-            <img
-              src="images/what-we-do-2.jpg"
-              alt="Smartphone in hand in front of laptop screen"
-              width="370"
-              height="274"
-            />
-          </li>
-          <li class="showcase-item">
-            <img
-              src="images/what-we-do-3.jpg"
-              alt="Colour picker on tablet"
-              width="370"
-              height="274"
-            />
-          </li>
-        </ul>
+      <section class="containter">
+        
+        <div class="flex-showcase">
+          <h2 class="section-title">Czym się zajmujemy</h2>
+            <ul class="list">
+              <li class="showcase-item">
+                <img
+                  src="images/what-we-do-1.jpg"
+                  alt="Typing on white keyboard"
+                  width="370"
+                  height="274"
+                />
+              </li>
+              <li class="showcase-item">
+                <img
+                  src="images/what-we-do-2.jpg"
+                  alt="Smartphone in hand in front of laptop screen"
+                  width="370"
+                  height="274"
+                />
+              </li>
+              <li class="showcase-item">
+                <img
+                  src="images/what-we-do-3.jpg"
+                  alt="Colour picker on tablet"
+                  width="370"
+                  height="274"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <!-- OUR TEAM -->

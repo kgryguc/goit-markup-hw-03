@@ -27,6 +27,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 15px;
 }
 
 .hover-focus-blue:active,
@@ -41,12 +42,9 @@ body {
   color: var(--alternative-text-color-white);
 }
 
-.flex {
-  display: flex;
-}
-
 .list {
   list-style: none;
+  margin: 0;
 }
 
 .section {
@@ -56,11 +54,16 @@ body {
 
 /* HEADER*/
 
-.header {
+.header-padding-border {
+  border-bottom: 1px solid var(--accent-division-line-lightgrey);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.flex-header {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0 15px 0;
-  border-bottom: 1px solid var(--accent-division-line-lightgrey);
 }
 
 .header-logo-nav {
@@ -121,6 +124,15 @@ body {
 /* HERO */
 .hero {
   background-color: var(--main-background-color);
+  padding-bottom: 185px;
+  padding-top: 185px;
+}
+
+.flex-hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-header {
@@ -129,38 +141,77 @@ body {
   font-weight: 900;
   letter-spacing: 0.06em;
   line-height: 1.36em;
+  max-width: 696px;
+  margin: 30px 0;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hero-button {
   background-color: var(--main-brand-color);
   border: none;
+  border-radius: 4px;
   color: var(--alternative-text-color-white);
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.88em;
+  padding: 10px 40px;
 }
 
 /* OUR ADVANTAGES */
 
+.advantages {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.advantages-list {
+  display: flex;
+}
+
+.advantages-item {
+  margin-right: 30px;
+}
+
+.advantages-item:last-child {
+  margin-right: 0;
+}
+
 .advantages-term {
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .advantages-description {
+  float: left;
   color: var(--alternative-text-color-grey);
+  height: 101px;
+  letter-spacing: 0.03em;
   line-height: 1.71em;
+  margin: 0;
 }
 
 /* WHAT WE DO */
+
+.flex-showcase {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .section-title {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.showcase-item {
+  display: inline;
 }
 
 /* OUR TEAM */
