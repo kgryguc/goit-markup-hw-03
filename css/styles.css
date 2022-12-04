@@ -1,0 +1,220 @@
+/* ROOT */
+
+:root {
+  --main-background-color: #2f303a;
+  --main-brand-color: #2196f3;
+  --main-text-color: #000;
+  --alternative-text-color-white: #fff;
+  --alternative-text-color-grey: #757575;
+  --alternative-text-color-darkgrey: #212121;
+  --alternative-text-color-black-alfa60: #ffffff99;
+  --alternative-background-color-lightgrey: #f5f4fa;
+  --alternative-background-color-white: #fff;
+}
+
+/* GLOBAL */
+
+body {
+  color: var(--main-text-color);
+  font-family: Roboto, sans-serif;
+}
+
+.button {
+  font-family: inherit;
+}
+
+.hover-focus-blue:active,
+.hover-focus-blue:focus,
+.hover-focus-blue:hover {
+  color: var(--main-brand-color);
+}
+
+.hover-focus-white:active,
+.hover-focus-white:focus,
+.hover-focus-white:hover {
+  color: var(--alternative-text-color-white);
+}
+
+.list {
+  list-style: none;
+}
+
+/* HEADER*/
+
+.logo,
+.logo:visited,
+.logo:active {
+  color: var(--main-text-color);
+  display: inline-block;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-accent {
+  color: var(--main-brand-color);
+}
+
+.nav {
+  display: inline-block;
+}
+
+.nav-item {
+  display: inline;
+}
+
+.header-contact {
+  color: var(--alternative-text-color-grey);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: var(--main-text-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* MAIN */
+
+/* HERO */
+.hero {
+  background-color: var(--main-background-color);
+  text-align: center;
+}
+
+.hero-header {
+  color: var(--alternative-text-color-white);
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  line-height: 1.36em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  background-color: var(--main-brand-color);
+  border: none;
+  color: var(--alternative-text-color-white);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.88em;
+}
+
+/* OUR ADVANTAGES */
+
+.advantages-term {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  color: var(--alternative-text-color-grey);
+  line-height: 1.71em;
+}
+
+/* WHAT WE DO */
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.showcase-item {
+  display: inline;
+}
+
+/* OUR TEAM */
+
+.team {
+  background-color: var(--alternative-background-color-lightgrey);
+}
+
+.team-card {
+  background-color: var(--alternative-background-color-white);
+}
+
+.team-person {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.team-role {
+  color: var(--alternative-text-color-grey);
+  font-size: 16px;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--main-background-color);
+}
+
+.logo-dark-background {
+  color: var(--alternative-text-color-white);
+}
+
+.footer-contact-item {
+  font-style: normal;
+}
+
+.footer-location {
+  color: var(--alternative-text-color-white);
+  text-decoration: none;
+}
+
+.footer-mail {
+  color: var(--alternative-text-color-black-alfa60);
+  text-decoration: underline;
+}
+
+.footer-tel {
+  color: var(--alternative-text-color-black-alfa60);
+  text-decoration: none;
+}
+
+/* PORTFOLIO */
+
+/* FITLER */
+
+.filter-option {
+  display: inline;
+}
+
+.filter-button {
+  background-color: var(--alternative-background-color-lightgrey);
+  border: none;
+  color: var(--alternative-text-color-darkgrey);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63em;
+}
+
+.filter-button:active,
+.filter-button:focus,
+.filter-button:hover {
+  background-color: var(--main-brand-color);
+  color: var(--alternative-text-color-white);
+}
+
+/* PORTFOLIO GALLERY */
+
+.portfolio-project-title {
+  color: var(--alternative-text-color-darkgrey);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 2em;
+}
+
+.portfolio-project-type {
+  color: var(--alternative-text-color-grey);
+  font-size: 16px;
+  line-height: 1.88em;
+}
