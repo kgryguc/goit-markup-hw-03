@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <title>Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,40 +21,50 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="index.html"
-        ><span class="logo-accent">Web</span>Studio</a
-      >
-      <nav class="nav">
-        <ul>
-          <li class="nav-item">
-            <a class="nav-link hover-focus-blue" href="#">Agencja</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link hover-focus-blue" href="portfolio.html"
-              >Portfolio</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link hover-focus-blue" href="#">Kontakt</a>
-          </li>
-        </ul>
-      </nav>
-      <a
-        class="header-contact hover-focus-blue"
-        href="mailto:info@devstudio.com"
-        >info@devstudio.com</a
-      >
-      <a class="header-contact hover-focus-blue" href="tel:+48111111111"
-        >+48 111 111 111</a
-      >
+      <div class="container flex header">
+        <div class="header-logo-nav">
+          <a class="logo" href="index.html"
+            ><span class="logo-accent">Web</span>Studio</a
+          >
+          <nav>
+            <ul class="nav-links list">
+              <li class="nav-item">
+                <a class="nav-link hover-focus-blue" href="#">Agencja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover-focus-blue" href="portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="nav-link hover-focus-blue" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <a
+            class="header-contact header-mail hover-focus-blue"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <a
+            class="header-contact header-tel last hover-focus-blue"
+            href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </div>
+      </div>
     </header>
 
     <main>
       <!-- HERO -->
 
-      <section class="hero">
-        <h1 class="hero-header">Efektywne rozwiązania dla waszego biznesu</h1>
-        <button class="hero-button button" type="button">Zamów usługę</button>
+      <section class="section hero">
+        <div class="container flex">
+          <h1 class="hero-header">Efektywne rozwiązania dla waszego biznesu</h1>
+          <button class="hero-button button" type="button">Zamów usługę</button>
+        </div>
       </section>
 
       <!-- OUR ADVANTAGES -->

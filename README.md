@@ -1,3 +1,3 @@
-Zadanie domowe studentów #2
+Zadanie domowe studentów #3
 
-https://kgryguc.github.io/goit-markup-hw-02/
+https://kgryguc.github.io/goit-markup-hw-03/

@@ -10,6 +10,7 @@
   --alternative-text-color-black-alfa60: #ffffff99;
   --alternative-background-color-lightgrey: #f5f4fa;
   --alternative-background-color-white: #fff;
+  --accent-division-line-lightgrey: #ececec;
 }
 
 /* GLOBAL */
@@ -21,6 +22,11 @@ body {
 
 .button {
   font-family: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hover-focus-blue:active,
@@ -35,11 +41,32 @@ body {
   color: var(--alternative-text-color-white);
 }
 
+.flex {
+  display: flex;
+}
+
 .list {
   list-style: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* HEADER*/
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 15px 0;
+  border-bottom: 1px solid var(--accent-division-line-lightgrey);
+}
+
+.header-logo-nav {
+  display: flex;
+  align-items: center;
+}
 
 .logo,
 .logo:visited,
@@ -57,12 +84,23 @@ body {
   color: var(--main-brand-color);
 }
 
-.nav {
-  display: inline-block;
+.nav-links {
+  display: flex;
+  margin-left: 93px;
+  padding: 0;
 }
 
+.nav-link {
+  color: var(--main-text-color);
+  font-weight: 500;
+  text-decoration: none;
+}
 .nav-item {
-  display: inline;
+  margin-right: 46px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
 }
 
 .header-contact {
@@ -71,10 +109,11 @@ body {
   text-decoration: none;
 }
 
-.nav-link {
-  color: var(--main-text-color);
-  font-weight: 500;
-  text-decoration: none;
+.header-mail {
+  margin-right: 50px;
+}
+.header-tel {
+  margin-right: 0;
 }
 
 /* MAIN */
@@ -82,7 +121,6 @@ body {
 /* HERO */
 .hero {
   background-color: var(--main-background-color);
-  text-align: center;
 }
 
 .hero-header {
@@ -123,10 +161,6 @@ body {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-}
-
-.showcase-item {
-  display: inline;
 }
 
 /* OUR TEAM */
@@ -181,10 +215,6 @@ body {
 /* PORTFOLIO */
 
 /* FITLER */
-
-.filter-option {
-  display: inline;
-}
 
 .filter-button {
   background-color: var(--alternative-background-color-lightgrey);
