@@ -280,14 +280,25 @@ li {
 
 .footer {
   background-color: var(--main-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-dark-background {
   color: var(--alternative-text-color-white);
 }
 
+.footer-address {
+  margin-top: 20px;
+}
+
 .footer-contact-item {
   font-style: normal;
+  margin-bottom: 9px;
+}
+
+.footer-contact-item:last-child {
+  margin-bottom: 0;
 }
 
 .footer-location {
