@@ -271,12 +271,13 @@ body {
 /* FITLER */
 
 .filter {
-  padding-bottom: 34px;
 }
 
 .filter-list {
   display: flex;
   justify-content: center;
+  gap: 8px;
+  padding-bottom: 34px;
 }
 
 .filter-button {
@@ -289,10 +290,6 @@ body {
   font-weight: 500;
   line-height: 1.63em;
   padding: 6px 22px;
-}
-
-.filter-option {
-  margin-right: 8px;
 }
 
 .filter-button:active,
