@@ -15,6 +15,11 @@
 
 /* GLOBAL */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   color: var(--main-text-color);
   font-family: Roboto, sans-serif;
@@ -27,7 +32,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .hover-focus-blue:active,
@@ -44,7 +49,6 @@ body {
 
 .list {
   list-style: none;
-  margin: 0;
 }
 
 .section {
@@ -52,17 +56,11 @@ body {
   padding-bottom: 94px;
 }
 
-ul,
-li {
-  padding: 0;
-}
-
 /* HEADER*/
 
 .header-padding-border {
   border-bottom: 1px solid var(--accent-division-line-lightgrey);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 25px 0;
 }
 
 .flex-header {
@@ -74,13 +72,13 @@ li {
 .header-logo-nav {
   display: flex;
   align-items: center;
+  gap: 93px;
 }
 
 .logo,
 .logo:visited,
 .logo:active {
   color: var(--main-text-color);
-  display: inline-block;
   font-family: Raleway, sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -94,21 +92,13 @@ li {
 
 .nav-links {
   display: flex;
-  margin-left: 93px;
-  padding: 0;
+  gap: 46px;
 }
 
 .nav-link {
   color: var(--main-text-color);
   font-weight: 500;
   text-decoration: none;
-}
-.nav-item {
-  margin-right: 46px;
-}
-
-.nav-item:last-child {
-  margin-right: 0;
 }
 
 .header-contact {
@@ -119,9 +109,6 @@ li {
 
 .header-mail {
   margin-right: 50px;
-}
-.header-tel {
-  margin-right: 0;
 }
 
 /* MAIN */
@@ -137,6 +124,7 @@ li {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 30px;
 }
 
 .hero-header {
@@ -146,7 +134,6 @@ li {
   letter-spacing: 0.06em;
   line-height: 1.36em;
   width: 696px;
-  margin: 30px 0;
   text-transform: uppercase;
   text-align: center;
 }
@@ -168,21 +155,12 @@ li {
 /* OUR ADVANTAGES */
 
 .advantages {
-  padding-bottom: 0;
   padding-top: 94px;
 }
 
 .advantages-list {
   display: flex;
-  margin: 0;
-}
-
-.advantages-item {
-  margin-right: 30px;
-}
-
-.advantages-item:last-child {
-  margin-right: 0;
+  gap: 30px;
 }
 
 .advantages-term {
@@ -192,11 +170,9 @@ li {
 }
 
 .advantages-description {
-  float: left;
   color: var(--alternative-text-color-grey);
   letter-spacing: 0.03em;
   line-height: 1.71em;
-  margin: 0;
 }
 
 /* WHAT WE DO */
@@ -204,28 +180,14 @@ li {
 .flex-showcase {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  padding: 0;
+  gap: 30px;
 }
 
 .section-title {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  margin: 0 0 50px 0;
-}
-
-.showcase-item {
-  display: inline-block;
-  margin-right: 30px;
-}
-
-.showcase-item img {
-  display: block;
-}
-
-.showcase-item:last-child {
-  margin-right: 0;
+  margin-bottom: 50px;
 }
 
 /* OUR TEAM */
@@ -236,28 +198,23 @@ li {
 
 .flex-team {
   display: flex;
+  gap: 30px;
 }
 
 .team-member {
   flex-basis: calc((100% - 90px) / 3);
-  margin-right: 30px;
-}
-
-.team-member:last-child {
-  margin-right: 0;
 }
 
 .team-card {
   background-color: var(--alternative-background-color-white);
-  margin: 0;
 }
 
 .team-card > figcaption {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  gap: 10px;
+  padding: 30px 0;
 
   box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024,
     0px 2px 1px #00000033;
@@ -267,13 +224,11 @@ li {
 .team-person {
   font-size: 16px;
   font-weight: 500;
-  margin: 0 0 10px 0;
 }
 
 .team-role {
   color: var(--alternative-text-color-grey);
   font-size: 16px;
-  margin: 0;
 }
 
 /* FOOTER */
@@ -344,9 +299,6 @@ li {
 .filter-option {
   margin-right: 8px;
 }
-.filter-option:last-child {
-  margin-right: 0;
-}
 
 .filter-button:active,
 .filter-button:focus,
@@ -359,14 +311,6 @@ li {
 
 /* PORTFOLIO GALLERY */
 
-.portfolio {
-  padding-top: 0;
-}
-
-.portfolio > .container {
-  padding-top: 0;
-}
-
 .flex-portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -377,12 +321,7 @@ li {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.portfolio-card {
-  margin: 0;
-}
-
 .portfolio-card > figcaption {
-  margin: 0;
   padding: 20px 24px;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
@@ -395,27 +334,10 @@ li {
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 2em;
-  margin: 0;
 }
 
 .portfolio-project-type {
   color: var(--alternative-text-color-grey);
   font-size: 16px;
   line-height: 1.88em;
-  margin: 0;
-}
-
-.team-card > figcaption {
-}
-
-.team-person {
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0 0 10px 0;
-}
-
-.team-role {
-  color: var(--alternative-text-color-grey);
-  font-size: 16px;
-  margin: 0;
 }
