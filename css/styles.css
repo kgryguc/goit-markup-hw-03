@@ -234,8 +234,7 @@ body {
 
 .footer {
   background-color: var(--main-background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 
 .logo-dark-background {
@@ -270,14 +269,11 @@ body {
 
 /* FITLER */
 
-.filter {
-}
-
 .filter-list {
   display: flex;
   justify-content: center;
   gap: 8px;
-  padding-bottom: 34px;
+  padding-bottom: 50px;
 }
 
 .filter-button {
