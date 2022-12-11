@@ -208,6 +208,10 @@ body {
   background-color: var(--alternative-background-color-white);
 }
 
+.team-card > img {
+  display: block;
+}
+
 .team-card > figcaption {
   display: flex;
   flex-direction: column;
@@ -307,6 +311,10 @@ body {
 
 .portfolio-project {
   flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-card > img {
+  display: block;
 }
 
 .portfolio-card > figcaption {
